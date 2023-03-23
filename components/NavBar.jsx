@@ -5,3 +5,8 @@ export default function NavBar() {
     <div>NavBar</div>
   )
 }
+
+
+function PassThr(){
+  
+}
