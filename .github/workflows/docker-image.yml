@@ -1,9 +1,9 @@
+ame: ci
 
-name: Publish Docker image
 on:
   push:
     branches:
-      - "master"
+      - "main"
 
 jobs:
   build:
@@ -16,8 +16,8 @@ jobs:
         name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
       -
         name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v2
@@ -28,4 +28,4 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/simple-app-demo:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/my_simple_app:latest
