@@ -9,7 +9,7 @@ export default function Home() {
       <NavBar/>
 
       <div className=' text-3xl flex  flex-row'> Hi work in progress  bye < FaHandSparkles/>!! </div>
-      //<iframe src="https://discord.com/widget?id=1081962989365772288&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      {/* <iframe src="https://discord.com/widget?id=1081962989365772288&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe> */}
       
       <FotBar/>
 
