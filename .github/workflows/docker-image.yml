@@ -1,9 +1,9 @@
-ame: ci
+name: docker_push
 
 on:
   push:
     branches:
-      - "main"
+      - "master"
 
 jobs:
   build:
